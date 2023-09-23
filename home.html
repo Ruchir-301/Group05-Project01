@@ -1,0 +1,77 @@
+<style>
+  label {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  input[type=file] {
+    width: 100%;
+    background-color: #699ed3;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #699ed3;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button{
+  width: 100%;
+  background-color: #63d739;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #034990;
+}
+/*
+button :hover{
+  background-color: #3cd902;
+}
+*/
+
+body{
+    position: relative;    
+    margin: auto;
+    border-radius: 5px;
+    width: 18%;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
+<body>
+  <div>
+    <form enctype="multipart/form-data" action="/upload" method="post">
+        
+          <label for ="file">CHOOSE FILE TO UPLOAD</label> <br/>
+          <input type="file" id="file" name="form_file" accept="image/jpeg"/> <br/>
+          <input type="submit" value="Upload"/>
+          
+    </form>
+  </div>
+  <label>UPLOADED FILES</label> <br/>
+<!--    <a href="/piclist"><button>  LIST </button></a> -->
+</body>
